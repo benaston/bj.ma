@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Copyright 2013 Ben Aston. Please note: this site remains a work in progress, and compatibility with non-webkit browsers is a high priority. -->
+    <meta charset=utf-8>
+    <title>Ben Aston, Consultant Software Developer</title>
+    <link href="./stylesheets/lucid-style-reset.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./stylesheets/lucid-style-typography.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./stylesheets/lucid-style-colors.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./stylesheets/style.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="./stylesheets/style-cube.css" media="all" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<section id="favorites-cube" class="cube-container" data-selected-face-id="0">
+    <input type="radio" id="topRadio" name="selectedFace" checked="checked"/>
+    <input type="radio" id="leftRadio" name="selectedFace"/>
+    <input type="radio" id="frontRadio" name="selectedFace"/>
+    <input type="radio" id="rightRadio" name="selectedFace"/>
+    <input type="radio" id="bottomRadio" name="selectedFace"/>
+    <input type="radio" id="backRadio" name="selectedFace"/>
+
+    <div class="cube-controls">
+        <label for="topRadio" class="face-selector"></label>
+        <label for="leftRadio" class="face-selector"></label>
+        <label for="frontRadio" class="face-selector"></label>
+        <label for="rightRadio" class="face-selector"></label>
+        <!--<label for="bottomRadio" class="face-selector"></label>-->
+        <!--<label for="backRadio" class="face-selector"></label>-->
+    </div>
+    <div class="cube">
+        <figure class="top">
+            <h1 class="logo blue-primary">Ben Aston</h1>
+
+            <h2 class="logo blue-primary">Consultant Software Developer, London UK</h2>
+
+            <p>Hi there! My name is Ben, and my professional passion is single-page web applications.</p>
+
+            <p>For examples of my .NET work, <a href="https://github.com/benaston/NState">NState</a> and <a
+                    href="https://github.com/benaston/NFeature">NFeature</a> can be found on both GitHub and NuGet. An
+                implementation of the distributed election "bully" algorithm can be found <a
+                        href="https://github.com/benaston/Taskr">here</a>.</p>
+
+            <p>For JavaScript, my current pet-project "Wizerati", a work-in-progress single-page web application can be
+                found on Heroku <a href="http://pacific-plains-5947.herokuapp.com/">here</a>.</p>
+
+            <p>I also maintain a minimalist CSS bootstrap: <a href="https://github.com/benaston/lucid">lucid.css</a>.
+            </p>
+
+
+            <p class="availability">I am currently available for ad-hoc consultancy &amp; agile coaching. I am next
+                available for extended contract work in December 2013.</p>
+
+            <p class="cta">Please email ben@bj.ma for further information.</p>
+        </figure>
+        <figure class="left">
+            <aside>This is a screenshot from <a href="http://pacific-plains-5947.herokuapp.com/">Wizerati</a> (Webkit
+                only), one of my experimental single-page web applications. I am a big fan of minimalism and this
+                informed the design here.
+            </aside>
+        </figure>
+        <figure class="front">
+            <aside>
+                This is a screenshot from a real-time messaging system I designed and developed. With an interface
+                reminiscent of
+                a chat application, this system enables real-time communication with customers.
+            </aside>
+            <aside>
+                The interface here was built using HTML5 flex-box to guarantee the message field remains in the
+                view-port. URL
+                fragment identifiers are used to ensure the chat history position remains correct for
+                users without JavaScript.
+            </aside>
+        </figure>
+        <figure class="right">
+            <aside>
+                <p>As part of a small team, I developed JustTextGiving, a partnership between JustGiving and
+                    Vodafone.</p>
+
+                <p>JustTextGiving brings the SMS funding channel to all UK charities - no matter how small.</p>
+            </aside>
+        </figure>
+        <figure class="bottom"></figure>
+        <figure class="back"></figure>
+    </div>
+    <ol class="cube-face-labels">
+        <li for="f-t"></li>
+        <li for="f-l">my favorites 2</li>
+        <li for="f-f">my favorites 3</li>
+        <li for="f-r">my favorites 4</li>
+        <li for="f-bottom">my favorites 5</li>
+        <li for="f-back">my favorites 6</li>
+    </ol>
+</section>
+<nav>
+    <ol>
+        <li>
+            <a href="./cv.pdf" title="Ben Aston's CV">Resume</a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/profile/view?id=36190890#recommendations"
+               title="Ben Aston's LinkedIn account">LinkedIn Recommendations</a>
+        </li>
+        <li>
+            <a href="https://github.com/benaston" title="Ben Aston's GitHub account">GitHub</a>
+        </li>
+        <li>
+            <a href="http://blog.bj.ma/" title="Ben Aston's blog">Blog</a>
+        </li>
+        <li>
+            <a href="http://twitter.com/benastontweet" title="Ben Aston's Twitter account">Twitter</a>
+        </li>
+        <li>
+            <a href="http://nuget.org/profiles/benaston" title="Ben Aston's NuGet account">NuGet</a>
+        </li>
+        <li>
+            <a href="http://www.flickr.com/photos/benastonflickr/" title="Ben Aston's Flickr account">Flickr</a>
+        </li>
+    </ol>
+</nav>
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-8203792-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>

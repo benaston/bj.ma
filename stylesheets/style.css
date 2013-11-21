@@ -1,0 +1,83 @@
+body {
+    padding: 0 30px 30px 30px;
+}
+
+h2.logo {
+    margin-bottom: 15px;
+}
+
+.left {
+    background-image: url('../images/1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.front {
+    background-image: url('../images/2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.right {
+    background-image: url('../images/3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.left aside {
+    font-style: italic;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .2);
+}
+
+.front aside:nth-child(1) {
+    font-style: italic;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.front aside:nth-child(2) {
+    font-style: italic;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .95);
+}
+
+.right aside {
+    font-style: italic;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .95);
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+}
+
+body {
+    min-width: 950px;
+}
