@@ -1,5 +1,6 @@
 body {
     padding: 0 30px 30px 30px;
+    min-width: 950px;
 }
 
 h2.logo {
@@ -76,8 +77,4 @@ nav {
     top: 40px;
     left: 40px;
     width: 150px;
-}
-
-body {
-    min-width: 950px;
 }
